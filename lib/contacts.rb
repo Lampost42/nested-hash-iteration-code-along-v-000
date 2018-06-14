@@ -15,5 +15,5 @@ require 'pry'
   # }
   
 def remove_strawberry(contacts)
-  contacts.each {|person, details| person.each {|detail, data| if data == 
+  contacts.each {|person, details| person.each {|detail, data| data.delete_if{|ice_cream| ice_cream == "strawberry"}}}
 end
